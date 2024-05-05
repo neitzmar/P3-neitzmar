@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PJ3: Snake Recreation</title>
+    <style type="text/css">
+        #title {
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #content {
+            width: 500px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        #board {
+            border: 1px solid black;
+        }
+
+        #points {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #buttons {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #lostMessage {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            display: none; /* Hide by default */
+        }
+    </style>
+</head>
+<body>
+    <div id="title">PJ3: Snake Recreation</div>
+
+    <div id="content">
+        <canvas id="board" width="500" height="500"></canvas>
+    </div>
+
+    <div id="points">Points: 0</div>
+
+    <div id="buttons">
+        <button id="pauseButton">Pause</button>
+        <button id="continueButton">Continue</button>
+    </div>
+
+    <div id="lostMessage">You lost!</div> <!-- New div for "You lost!" message -->
+    
+    <script src="snake.js"></script>
+</body>
+</html>
